@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <h1> Hi user</h1>
+        <br>
+
+    </head>
+    <body>
+        <form action="/tabl" method="get">
+       Table of : <input type="number" name="Table">
+       <input type="submit" value="Submit">
+       <table border="1">
+           {{#each x}}
+           <tr>
+           <td>
+               {{this}}
+           </td>
+           </tr>
+            {{/each }}
+
+       </table>
+       </form>
+       <p>{{msg}}</p>
+    </body>
+</html>
